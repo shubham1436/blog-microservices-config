@@ -108,12 +108,13 @@ spring:
 
 server.port: 8080
 
-spring.rabbitmq.host: rabbitmq.marathon.containerip.dcos.thisdcos.directory
+spring.rabbitmq.host: rabbitmq
+#.marathon.containerip.dcos.thisdcos.directory
 
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://discovery.marathon.containerip.dcos.thisdcos.directory:8761/eureka/
+      defaultZone: http://discovery:8761/eureka/
 
 
 ---
